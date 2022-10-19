@@ -156,3 +156,7 @@ dist
 
 .DS_Store
 *.zip
+*.lock
+*target
+
+!Cargo.lock
