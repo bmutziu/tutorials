@@ -1,5 +1,6 @@
 variable "cluster_name" {
   default = "demo"
+  type    = string
 }
 
 provider "aws" {
@@ -12,11 +13,11 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.0"
+      version = "~> 4.37"
     }
     helm = {
       source  = "hashicorp/helm"
-      version = "~> 2.6"
+      version = "~> 2.7"
     }
   }
 }
